@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Medical Records</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Personal Medical Records</h1>
+    <nav>
+      <ul>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#history">Medical History</a></li>
+        <li><a href="#medication">Medication Tracker</a></li>
+        <li><a href="#appointments">Appointments</a></li>
+        <li><a href="#labs">Lab Results</a></li>
+        <li><a href="#emergency">Emergency Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="login" class="card">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </section>
+
+    <section id="history" class="card">
+      <h2>Medical History</h2>
+      <textarea placeholder="Allergies, past surgeries, chronic conditions..."></textarea><br>
+      <input type="file" multiple />
+      <button>Save</button>
+    </section>
+
+    <section id="medication" class="card">
+      <h2>Medication Tracker</h2>
+      <input type="text" placeholder="Medication Name" />
+      <input type="text" placeholder="Dosage" />
+      <input type="text" placeholder="Frequency" />
+      <button onclick="addMedication()">Add Medication</button>
+      <ul id="medication-list"></ul>
+    </section>
+
+    <section id="appointments" class="card">
+      <h2>Appointments</h2>
+      <input type="text" placeholder="Doctor's Name" />
+      <input type="date" />
+      <textarea placeholder="Notes..."></textarea>
+      <button>Add Appointment</button>
+    </section>
+
+    <section id="labs" class="card">
+      <h2>Lab Results</h2>
+      <input type="file" />
+      <button>Upload Lab Result</button>
+    </section>
+
+    <section id="emergency" class="card">
+      <h2>Emergency Information</h2>
+      <input type="text" placeholder="Emergency Contact" />
+      <input type="text" placeholder="Blood Type" />
+      <textarea placeholder="Allergies, chronic conditions..."></textarea>
+      <button>Save Emergency Info</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2023 Personal Medical Records App
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
